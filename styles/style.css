@@ -13,6 +13,10 @@ h3{
     margin:0;
 }
 
+h4 {
+    margin-top:0;
+}
+
 .wrapper{
     display:flex;
     flex-direction:column;
@@ -76,22 +80,18 @@ nav ul li:hover{
 }
 
 .left-content{
-    flex-basis:60%;
-    flex-shrink:1;
-    flex-grow:1;
-    padding: 0 1em 0 1em;
-    justify-content:space-between;
+    padding: 0.5em 1em 0 1em;   
     background:orange;
     margin-top:5em;
     margin-left:10%;
-    margin-right:33%;
+    margin-right:40%;
 }
 
 .right-img-fade{
     position:fixed;
     top:0;
     right:0;
-    width:33%;
+    width:40%;
     flex-shrink:3;
     flex-grow:0;    
     overflow:hidden;
