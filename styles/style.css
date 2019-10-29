@@ -1,0 +1,155 @@
+html {
+    font-family: "noto sans", sans-serif;
+    font-size: 16pt;
+}
+
+body {
+    font-size:0.66em;
+}
+
+h3{
+    margin:0;
+}
+
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    background:lightgray;
+}
+
+header {
+    display: flex;
+    line-height:1em;
+    margin: 0 0 1em 0;
+    font-weight:bolder;
+    color:#666;
+}
+
+main {
+    display:flex;
+    flex-direction:row;
+    flex-grow:1;
+}
+
+a {
+    text-decoration:none;
+}
+
+header img {
+    height:3em;
+}
+
+.horiz-container{
+    display:flex;
+}
+
+nav {
+
+    flex-basis:auto;
+}
+
+nav ul {
+    padding: 0 0 0 0;
+    margin:0;
+}
+
+nav ul li{
+    list-style:none;
+    padding: 0.5em 1em 0.5em 1em;
+    border-top-left-radius:5px;
+    margin-bottom:0.5em;
+    text-align:right;
+    box-shadow: -1px 3px 2px 2px lightgray;
+}
+
+nav ul li:hover{
+    background:orange;
+}
+
+.active-tab{
+    background:orange;
+}
+
+#main-content {
+    background: orange;
+    border-radius:5px;
+    border-top-left-radius: 0;
+    flex-grow:1;
+    overflow:hidden;
+    height:90vh;
+}
+
+#main-content .left-content{
+    flex-basis:60%;
+    flex-shrink:1;
+    flex-grow:1;
+    padding: 0 1em 0 1em;
+    justify-content:space-between;
+}
+
+#main-content .right-content{
+    position:relative;
+    top:0;
+    left:0;
+    flex-shrink:3;
+    flex-grow:0;
+    width:50%;
+    overflow:hidden;
+    /*background:url("../images/Collegepic.jpg");*/
+}
+
+
+.right-content img{
+    height:100%;
+}
+
+.right-content .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:66%;
+    height:100%;
+    background-image: linear-gradient(to right, orange , rgba(255,255,255,0));
+}
+
+footer{
+    width:100%;
+}
+
+.course-summary{
+    /*border:3px solid gray;*/
+    margin-bottom:2em;
+    margin-top:1em;
+}
+
+.course-summary p {
+    margin:0 0 1em 0;
+}
+
+.course-summary h4{
+    margin-top:0;
+}
+
+.logosmall{
+    flex-shrink:0;
+    flex-grow:0;
+    width:128px;
+    margin-right:2em;
+}
+
+.logosmall img{
+    width:100%;
+}
+
+.button{
+    border:2px solid gray;
+    width:10em;
+    text-align:center;
+    padding:0.5em 1em 0.5em 1em;
+    margin-top:0.25em;
+    text-decoration:none;
+}
+
+.button:hover{
+    background:lightgray;
+}
