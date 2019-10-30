@@ -7,6 +7,11 @@ body {
     font-size:0.66em;
     margin:0;
     background:orange;
+    color:#222;
+}
+
+h1{
+    margin:0 0 1em 0;
 }
 
 h3{
@@ -17,15 +22,15 @@ h4 {
     margin-top:0;
 }
 
-.wrapper{
-    display:flex;
-    flex-direction:column;
-    background:lightgray;
+em{
+    font-style:normal;
+    color:black;
+    font-weight:600;
 }
 
-header {
-    display: flex;
-    line-height:1em;
+
+header{
+    display: flex;      
     margin: 0 0 1em 0;
     font-weight:bolder;
     color:#666;
@@ -34,14 +39,24 @@ header {
     width:100%;
     z-index:1;
     background:white;
+
+    height:6em;
 }
 
 a {
+    color:black;
     text-decoration:none;
 }
 
+#college-logo{
+    font-size:2em;
+    display:flex;
+    line-height:1em;   
+    color:#666;
+}
+
 header img {
-    height:5em;
+    height:3em;
 }
 
 .horiz-container{
@@ -50,9 +65,9 @@ header img {
 
 nav {
     position:fixed;
-    top:5em;
+    top:6em;
     left:0;
-    width:10%;
+    width:8em;
     background:white;
     height:100%;
 }
@@ -69,6 +84,9 @@ nav ul li{
     margin-bottom:0.5em;
     text-align:right;
     box-shadow: -5px 3px 2px 2px lightgray;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 nav ul li:hover{
@@ -82,8 +100,8 @@ nav ul li:hover{
 .left-content{
     padding: 0.5em 1em 0 1em;   
     background:orange;
-    margin-top:5em;
-    margin-left:10%;
+    margin-top:6em;
+    margin-left:8em;
     margin-right:40%;
 }
 
@@ -152,4 +170,53 @@ footer{
 
 .button:hover{
     background:lightgray;
+}
+
+.location-details p{
+    margin:0;
+}
+
+.location-details a{
+    position:relative;
+    top:0;
+    left:0;
+    margin-right:3em;
+    width:196px;
+    height:196px;
+    flex-shrink:0;
+}
+
+.location-details a:after {
+    position:absolute;
+    top:0;
+    left:0;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0.15;
+    background: black;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.location-details a:hover:after{
+    opacity:0;
+}
+
+.location-details img{
+    width:100%;
+}
+
+table,td,tr,th{
+    border: 2px solid orange;
+    border-collapse: collapse;
+    padding:1em;
+    background:darkorange;
+}
+
+.inline-icon{
+    display:inline-block;
+    height:1em;
 }
